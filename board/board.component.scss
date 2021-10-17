@@ -1,0 +1,17 @@
+main{
+    display:grid;
+    grid-template-columns:150px 150px 150px;
+    grid-gap:10px;
+    
+}
+
+app-square{
+    height: 150px;
+    width : 150px;
+}
+
+h2{
+    font-style: italic;
+    color: gold;
+    font-size:medium;
+}

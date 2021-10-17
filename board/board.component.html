@@ -1,0 +1,19 @@
+<h1>current player is - {{player}}</h1>
+<button nbButton hero status = "success" (click)="newgame()">NEW GAME</button>
+<br><br>
+<h2 *ngIf="winner">
+    Player {{winner}} won the game !!
+</h2>
+<h2 *ngIf="isTie">
+    Its a Tie !! play again
+</h2>
+
+<main>
+<app-square 
+*ngFor="let sq of squares;let i= index"
+[value]="sq"
+(click)="makeMove(i)">
+
+</app-square>
+
+</main>
